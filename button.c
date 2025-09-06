@@ -22,6 +22,7 @@ void Button_update(Button_t *Button, int user_input)
             if(user_input == 2)
             {
                 Button->B_state = BUTTON_RELEASED;
+                printf("Button Released!\n");
             }
 
         }
@@ -33,6 +34,7 @@ void Button_update(Button_t *Button, int user_input)
             if(user_input == 1)
             {
                 Button->B_state = BUTTON_PRESSED;
+                printf("Button Pressed\n");
             }
 
 

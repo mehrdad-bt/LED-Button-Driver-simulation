@@ -37,7 +37,7 @@ void Led_print(LED_t *led)
     {
         printf("Led status = ON\n"); 
     }
-    else
+    else if(led->L_state == LED_OFF)
     {
         printf("Led status = OFF\n");        
     }

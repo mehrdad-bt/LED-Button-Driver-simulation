@@ -25,11 +25,11 @@ int main(){
             {
                 Led_print(&led);
             }
-            Button_update(&Button, user_input);
+
+                Button_update(&Button, user_input);
             
-            if(Button_Getstate(&Button) == BUTTON_PRESSED)
+            if(Button_Getstate(&Button) == BUTTON_PRESSED && user_input != 3)
             {
-                printf("Button Pressed\n");
                 Led_toggle(&led);
             }
 
